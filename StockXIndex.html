@@ -1,0 +1,265 @@
+<html ng-app="StockXApp">
+    <head>
+        <title>StockX Shoe Inventory System</title>
+        <script src="angular.js"></script>
+        <link rel="stylesheet" type="text/css" href="StockXCSS.css">
+        <script src="StockXScript.js"></script>
+    </head>
+    <body>
+        <h1>StockX Inventory Shelf</h1>
+
+        <div class="WrapperGrid" ng-controller="Ctrl as c">
+
+            <div class="box 1"  ng-click="c.showDiv(1)">
+                <div class="imgDiv" ng-show="c.showImage">
+                 <a href=""><img src="./images/img1.jpeg"></a>
+                </div>
+                <div id="popUpDiv" ng-hide="c.showImage">
+                   <button>(+)Add</button> <br>
+                   <a ng-href="StockXForm.html">Edit</a><br>
+                   <button>(-)Remove</button>
+                </div>
+            </div>
+            <div class="box 2"  ng-click="c.showDiv(2)">
+                <div class="imgDiv" ng-show="c.showImage">
+                 <a href=""><img src="./images/img2.jpeg"></a>
+                </div>
+                    <div id="popUpDiv" ng-hide="c.showImage">
+                       <button>(+)Add</button> <br>
+                       <a ng-href="StockXForm.html">Edit</a><br>
+                       <button>(-)Remove</button>
+                    </div>
+            </div>
+            <div class="box 3"  ng-click="c.showDiv(3)">
+                <div class="imgDiv" ng-show="c.showImage">
+                         <a href=""><img src="./images/img3.jpeg"></a>
+                        </div>
+                        <div id="popUpDiv" ng-hide="c.showImage">
+                           <button>(+)Add</button> <br>
+                           <a ng-href="StockXForm.html">Edit</a><br>
+                           <button>(-)Remove</button>
+                        </div>
+                    </div>
+                    <div class="box 4"  ng-click="c.showDiv(4)">
+                            <div class="imgDiv" ng-show="c.showImage">
+                             <a href=""><img src="./images/img4.jpeg"></a>
+                            </div>
+                            <div id="popUpDiv" ng-hide="c.showImage">
+                               <button>(+)Add</button> <br>
+                               <a ng-href="StockXForm.html">Edit</a><br>
+                               <button>(-)Remove</button>
+                            </div>
+                        </div>
+                        <div class="box 5"  ng-click="c.showDiv(5)">
+                                <div class="imgDiv" ng-show="c.showImage">
+                                 <a href=""><img src="./images/img5.jpeg"></a>
+                                </div>
+                                <div id="popUpDiv" ng-hide="c.showImage">
+                                   <button>(+)Add</button> <br>
+                                   <a ng-href="StockXForm.html">Edit</a><br>
+                                   <button>(-)Remove</button>
+                                </div>
+                            </div>
+                            <div class="box 6"  ng-click="c.showDiv(6)">
+                                    <div class="imgDiv" ng-show="c.showImage">
+                                     <a href=""><img src="./images/img6.jpeg"></a>
+                                    </div>
+                                    <div id="popUpDiv" ng-hide="c.showImage">
+                                       <button>(+)Add</button> <br>
+                                       <a ng-href="StockXForm.html">Edit</a><br>
+                                       <button>(-)Remove</button>
+                                    </div>
+                                </div>
+                                <div class="box 7"  ng-click="c.showDiv(7)">
+                                        <div class="imgDiv" ng-show="c.showImage">
+                                         <a href=""><img src="./images/img7.jpeg"></a>
+                                        </div>
+                                        <div id="popUpDiv" ng-hide="c.showImage">
+                                           <button>(+)Add</button> <br>
+                                           <a ng-href="StockXForm.html">Edit</a><br>
+                                           <button>(-)Remove</button>
+                                        </div>
+                                    </div>
+                                    <div class="box 8"  ng-click="c.showDiv(8)">
+                                            <div class="imgDiv" ng-show="c.showImage">
+                                             <a href=""><img src="./images/img8.jpeg"></a>
+                                            </div>
+                                            <div id="popUpDiv" ng-hide="c.showImage">
+                                               <button>(+)Add</button> <br>
+                                               <a ng-href="StockXForm.html">Edit</a><br>
+                                               <button>(-)Remove</button>
+                                            </div>
+                                        </div>
+                                        <div class="box 9"  ng-click="c.showDiv(9)">
+                                                <div class="imgDiv" ng-show="c.showImage">
+                                                 <a href=""><img src="./images/img9.jpeg"></a>
+                                                </div>
+                                                <div id="popUpDiv" ng-hide="c.showImage">
+                                                   <button>(+)Add</button> <br>
+                                                   <a ng-href="StockXForm.html">Edit</a><br>
+                                                   <button>(-)Remove</button>
+                                                </div>
+                                            </div>
+                                            <div class="box 10"  ng-click="c.showDiv(10)">
+                                                    <div class="imgDiv" ng-show="c.showImage">
+                                                     <a href=""><img src="./images/img10.jpeg"></a>
+                                                    </div>
+                                                    <div id="popUpDiv" ng-hide="c.showImage">
+                                                       <button>(+)Add</button> <br>
+                                                       <a ng-href="StockXForm.html">Edit</a><br>
+                                                       <button>(-)Remove</button>
+                                                    </div>
+                                                </div>
+                                                <div class="box 11"  ng-click="c.showDiv(11)">
+                                                        <div class="imgDiv" ng-show="c.showImage">
+                                                         <a href=""><img src="./images/img11.jpeg"></a>
+                                                        </div>
+                                                        <div id="popUpDiv" ng-hide="c.showImage">
+                                                           <button>(+)Add</button> <br>
+                                                           <a ng-href="StockXForm.html">Edit</a><br>
+                                                           <button>(-)Remove</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="box 12"  ng-click="c.showDiv(12)">
+                                                            <div class="imgDiv" ng-show="c.showImage">
+                                                             <a href=""><img src="./images/img12.jpeg"></a>
+                                                            </div>
+                                                            <div id="popUpDiv" ng-hide="c.showImage">
+                                                               <button>(+)Add</button> <br>
+                                                               <a ng-href="StockXForm.html">Edit</a><br>
+                                                               <button>(-)Remove</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="box 13"  ng-click="c.showDiv(13)">
+                                                                <div class="imgDiv" ng-show="c.showImage">
+                                                                 <a href=""><img src="./images/img13.jpeg"></a>
+                                                                </div>
+                                                                <div id="popUpDiv" ng-hide="c.showImage">
+                                                                   <button>(+)Add</button> <br>
+                                                                   <a ng-href="StockXForm.html">Edit</a><br>
+                                                                   <button>(-)Remove</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="box 14"  ng-click="c.showDiv(14)">
+                                                                    <div class="imgDiv" ng-show="c.showImage">
+                                                                     <a href=""><img src="./images/img14.jpeg"></a>
+                                                                    </div>
+                                                                    <div id="popUpDiv" ng-hide="c.showImage">
+                                                                       <button>(+)Add</button> <br>
+                                                                       <a ng-href="StockXForm.html">Edit</a><br>
+                                                                       <button>(-)Remove</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="box 15"  ng-click="c.showDiv(15)">
+                                                                        <div class="imgDiv" ng-show="c.showImage">
+                                                                         <a href=""><img src="./images/img15.jpeg"></a>
+                                                                        </div>
+                                                                        <div id="popUpDiv" ng-hide="c.showImage">
+                                                                           <button>(+)Add</button> <br>
+                                                                           <a ng-href="StockXForm.html">Edit</a><br>
+                                                                           <button>(-)Remove</button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="box 16"  ng-click="c.showDiv(16)">
+                                                                            <div class="imgDiv" ng-show="c.showImage">
+                                                                             <a href=""><img src="./images/img16.jpeg"></a>
+                                                                            </div>
+                                                                            <div id="popUpDiv" ng-hide="c.showImage">
+                                                                               <button>(+)Add</button> <br>
+                                                                               <a ng-href="StockXForm.html">Edit</a><br>
+                                                                               <button>(-)Remove</button>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="box 17"  ng-click="c.showDiv(17)">
+                                                                                <div class="imgDiv" ng-show="c.showImage">
+                                                                                 <a href=""><img src="./images/img17.jpeg"></a>
+                                                                                </div>
+                                                                                <div id="popUpDiv" ng-hide="c.showImage">
+                                                                                   <button>(+)Add</button> <br>
+                                                                                   <a ng-href="StockXForm.html">Edit</a><br>
+                                                                                   <button>(-)Remove</button>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="box 18"  ng-click="c.showDiv(18)">
+                                                                                    <div class="imgDiv" ng-show="c.showImage">
+                                                                                     <a href=""><img src="./images/img18.jpeg"></a>
+                                                                                    </div>
+                                                                                    <div id="popUpDiv" ng-hide="c.showImage">
+                                                                                       <button>(+)Add</button> <br>
+                                                                                       <a ng-href="StockXForm.html">Edit</a><br>
+                                                                                       <button>(-)Remove</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="box 19"  ng-click="c.showDiv(19)">
+                                                                                        <div class="imgDiv" ng-show="c.showImage">
+                                                                                         <a href=""><img src="./images/img19.jpeg"></a>
+                                                                                        </div>
+                                                                                        <div id="popUpDiv" ng-hide="c.showImage">
+                                                                                           <button>(+)Add</button> <br>
+                                                                                           <a ng-href="StockXForm.html">Edit</a><br>
+                                                                                           <button>(-)Remove</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box 20"  ng-click="c.showDiv(20)">
+                                                                                            <div class="imgDiv" ng-show="c.showImage">
+                                                                                             <a href=""><img src="./images/img20.jpeg"></a>
+                                                                                            </div>
+                                                                                            <div id="popUpDiv" ng-hide="c.showImage">
+                                                                                               <button>(+)Add</button> <br>
+                                                                                               <a ng-href="StockXForm.html">Edit</a><br>
+                                                                                               <button>(-)Remove</button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="box 21"  ng-click="c.showDiv(21)">
+                                                                                                <div class="imgDiv" ng-show="c.showImage">
+                                                                                                 <a href=""><img src="./images/img21.jpeg"></a>
+                                                                                                </div>
+                                                                                                <div id="popUpDiv" ng-hide="c.showImage">
+                                                                                                   <button>(+)Add</button> <br>
+                                                                                                   <a ng-href="StockXForm.html">Edit</a><br>
+                                                                                                   <button>(-)Remove</button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="box 22"  ng-click="c.showDiv(22)">
+                                                                                                    <div class="imgDiv" ng-show="c.showImage">
+                                                                                                     <a href=""><img src="./images/img22.jpeg"></a>
+                                                                                                    </div>
+                                                                                                    <div id="popUpDiv" ng-hide="c.showImage">
+                                                                                                       <button>(+)Add</button> <br>
+                                                                                                       <a ng-href="StockXForm.html">Edit</a><br>
+                                                                                                       <button>(-)Remove</button>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="box 23"  ng-click="c.showDiv(23)">
+                                                                                                        <div class="imgDiv" ng-show="c.showImage">
+                                                                                                         <a href=""><img src="./images/img23.jpeg"></a>
+                                                                                                        </div>
+                                                                                                        <div id="popUpDiv" ng-hide="c.showImage">
+                                                                                                           <button>(+)Add</button> <br>
+                                                                                                           <a ng-href="StockXForm.html">Edit</a><br>
+                                                                                                           <button>(-)Remove</button>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="box 24"  ng-click="c.showDiv(24)">
+                                                                                                            <div class="imgDiv" ng-show="c.showImage">
+                                                                                                             <a href=""><img src="./images/img24.jpeg"></a>
+                                                                                                            </div>
+                                                                                                            <div id="popUpDiv" ng-hide="c.showImage">
+                                                                                                               <button>(+)Add</button> <br>
+                                                                                                               <a ng-href="StockXForm.html">Edit</a><br>
+                                                                                                               <button>(-)Remove</button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="box 25"  ng-click="c.showDiv(25)">
+                                                                                                                <div class="imgDiv" ng-show="c.showImage">
+                                                                                                                 <a href=""><img src="./images/img25.jpeg"></a>
+                                                                                                                </div>
+                                                                                                                <div id="popUpDiv" ng-hide="c.showImage">
+                                                                                                                   <button>(+)Add</button> <br>
+                                                                                                                   <a ng-href="StockXForm.html">Edit</a><br>
+                                                                                                                   <button>(-)Remove</button>
+                                                                                                                </div>
+                                                                                                            </div>
+          </div>
+    </body>
+</html>
