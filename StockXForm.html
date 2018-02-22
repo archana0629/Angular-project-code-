@@ -1,0 +1,181 @@
+<html ng-app="shoeApp">
+    <head>
+        <title>Shoe Information</title>
+        <script src="angular.js"></script>
+        <script>
+                var shoeApp = angular.module('shoeApp', []);
+                shoeApp.controller('ShoeCtrl', function ($scope){
+                  
+                    $scope.shoes = [
+{
+    "Brand":"A",
+    "Style":"a",
+    "Size":"1",
+    "UPC_ID":"#123"
+    
+},{
+    "Brand":"B",
+    "Style":"b",
+    "Size":"2",
+    "UPC_ID":"#123"
+},{
+    "Brand":"C",
+    "Style":"c",
+    "Size":"3",
+    "UPC_ID":"#123"
+},{
+    "Brand":"D",
+    "Style":"d",
+    "Size":"4",
+    "UPC_ID":"#123"
+},{
+    "Brand":"E",
+    "Style":"e",
+    "Size":"5",
+    "UPC_ID":"#123"
+},{
+    "Brand":"F",
+    "Style":"f",
+    "Size":"6",
+    "UPC_ID":"#123"
+},{
+    "Brand":"G",
+    "Style":"g",
+    "Size":"7",
+    "UPC_ID":"#123"
+},{
+    "Brand":"H",
+    "Style":"h",
+    "Size":"8",
+    "UPC_ID":"#123"
+},{
+    "Brand":"I",
+    "Style":"i",
+    "Size":"9",
+    "UPC_ID":"#123"
+},{
+    "Brand":"J",
+    "Style":"j",
+    "Size":"10",
+    "UPC_ID":"#123"
+},{
+    "Brand":"K",
+    "Style":"k",
+    "Size":"11",
+    "UPC_ID":"#123"
+},{
+    "Brand":"L",
+    "Style":"l",
+    "Size":"12",
+    "UPC_ID":"#123"
+},{
+    "Brand":"M",
+    "Style":"m",
+    "Size":"13",
+    "UPC_ID":"#123"
+},{
+    "Brand":"N",
+    "Style":"n",
+    "Size":"14",
+    "UPC_ID":"#123"
+},{
+    "Brand":"O",
+    "Style":"o",
+    "Size":"15",
+    "UPC_ID":"#123"
+},{
+    "Brand":"P",
+    "Style":"p",
+    "Size":"16",
+    "UPC_ID":"#123"
+},{
+    "Brand":"Q",
+    "Style":"q",
+    "Size":"17",
+    "UPC_ID":"#123"
+},{
+    "Brand":"R",
+    "Style":"r",
+    "Size":"18",
+    "UPC_ID":"#123"
+},{
+    "Brand":"S",
+    "Style":"s",
+    "Size":"19",
+    "UPC_ID":"#123"
+},{
+    "Brand":"T",
+    "Style":"t",
+    "Size":"20",
+    "UPC_ID":"#123"
+},{
+    "Brand":"U",
+    "Style":"u",
+    "Size":"21",
+    "UPC_ID":"#123"
+},{
+    "Brand":"V",
+    "Style":"v",
+    "Size":"22",
+    "UPC_ID":"#123"
+},{
+    "Brand":"W",
+    "Style":"w",
+    "Size":"23",
+    "UPC_ID":"#123"
+},{
+    "Brand":"X",
+    "Style":"x",
+    "Size":"24",
+    "UPC_ID":"#123"
+},{
+    "Brand":"Y",
+    "Style":"y",
+    "Size":"25",
+    "UPC_ID":"#123"
+}
+
+
+
+];
+                  });
+                
+              </script>
+              <style>
+                  h1{
+                    text-align: center;
+                    text-decoration: underline;
+                    text-decoration-style: dashed;
+                  }
+                  table{
+                      table-layout: auto;
+                      width:25%;
+                      position: relative;
+                      text-align:center;
+                      margin-left:auto; 
+                        margin-right:auto;
+                      
+                  }
+                  table,th,td{
+                    border: 1px solid black;
+                  }
+              </style>
+    </head>
+    <body ng-controller="ShoeCtrl">
+        <h1> Product Details</h1>
+            <table>
+                    <tr>
+                      <th>Brand</th><br>
+                      <th>Style</th><br>
+                      <th>Size</th><br>
+                      <th>UPC Id</th>
+                    </tr>
+                    <tr ng-repeat="shoe in shoes">
+                      <td>{{shoe.Brand}}</td>
+                      <td>{{shoe.Style}}</td>
+                      <td>{{shoe.Size}}</td>
+                      <td>{{shoe.UPC_ID}}</td>
+                    </tr>
+                  </table>
+    </body>
+</html>
