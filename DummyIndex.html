@@ -1,0 +1,27 @@
+<html ng-app="StockXApp">
+    <head>
+        <title>StockX Shoe Inventory System</title>
+        <script src="angular.js"></script>
+        <link rel="stylesheet" type="text/css" href="StockXCSS.css">
+        <script src="StockXScript.js"></script>
+    </head>
+    <body>
+        <h1>Inventory Shelf</h1>
+
+        <div class="WrapperGrid" ng-controller="Ctrl as c">
+
+            <div class="box"   ng-repeat="i in c.array track by $index">
+                <div class="imgDiv" ng-show="c.showImage" >
+                   
+                 <a href=""><img ng-click="c.showDiv($index)" src="./images/img'+i+'.jpeg"></a>
+                </div>
+                <div id="popUpDiv" ng-hide="c.showImage" ng-click="c.showDiv($index)">
+                   <button>(+)Add</button> <br>
+                   <button>Edit</button><br>
+                   <button>(-)Remove</button>
+                </div>
+            </div>
+            
+          </div>
+    </body>
+</html>
